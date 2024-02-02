@@ -41,3 +41,29 @@ except KeyboardInterrupt:
 GPIO.cleanup()  # Clean up GPIO on normal exit
 ```
 
+## Button (Latch)
+```
+import RPi.GPIO as GPIO
+import time
+
+# Pin setup
+button_pin = 17  # Assuming you connected the button to GPIO 17
+GPIO.setmode(GPIO.BCM)  # Use Broadcom pin-numbering scheme
+GPIO.setup(button_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)  # Button pin set as input w/ pull-up
+
+try:
+    print("Press or release the button")
+    while True:
+        # Read the button state
+        if GPIO.input(button_pin) == False:  # Button is pressed when pin is LOW
+            print("Button pressed - Output: 1")
+        else:
+            print("Button released - Output: 0")
+        time.sleep(0.1)  # Small delay to debounce and reduce CPU usage
+except KeyboardInterrupt:
+    # Clean up GPIO on CTRL+C exit
+    GPIO.cleanup()
+
+GPIO.cleanup()  # Clean up GPIO on normal exit
+
+```
