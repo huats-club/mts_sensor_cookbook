@@ -3,7 +3,7 @@
 ## Install Raspberry Pi GPIO
 
 ```
-pip install RPi.GPIO
+pip install RPi.GPIO==0.7.1
 ```
 
 ## Light Detect (On/Off)

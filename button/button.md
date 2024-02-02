@@ -5,7 +5,7 @@ This repository uses the DFRobot Digital Push Button v2
 ## Install Raspberry Pi GPIO
 
 ```
-pip install RPi.GPIO
+pip install RPi.GPIO==0.7.1
 ```
 
 ## Button (Toggle)
@@ -55,7 +55,7 @@ try:
     print("Press or release the button")
     while True:
         # Read the button state
-        if GPIO.input(button_pin) == False:  # Button is pressed when pin is LOW
+        if GPIO.input(button_pin) == True:  # Button is pressed when pin is LOW
             print("Button pressed - Output: 1")
         else:
             print("Button released - Output: 0")
