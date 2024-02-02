@@ -8,6 +8,9 @@ This repository uses the DFRobot DIgital RGB LED Module V1.0
 pip install rpi_ws281x
 ```
 
+## Connection
+![Alt text](../diagram/schematics-LED.png)
+
 ## Enable I2C / SPI
 
 ```

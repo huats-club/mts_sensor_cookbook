@@ -8,6 +8,9 @@ This repository uses the DFRobot Digital Push Button v2
 pip install RPi.GPIO==0.7.1
 ```
 
+## Connection
+![Alt text](../diagram/schematics-Button.png)
+
 ## Button (Toggle)
 ```
 import RPi.GPIO as GPIO

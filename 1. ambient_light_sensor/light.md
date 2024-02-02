@@ -6,6 +6,9 @@
 pip install RPi.GPIO==0.7.1
 ```
 
+## Connection
+![Alt text](../diagram/schematics_LDR.png)
+
 ## Light Detect (On/Off)
 
 ```
