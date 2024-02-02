@@ -5,13 +5,13 @@ In this repository we will explore interfacing a Midi Controller (USB) with a Ra
 ## Install mido
 
 ```
-pip3 install mido
+pip install mido
 ```
 
 ## Install rtmidi
 
 ```
-pip3 install python-rtmidi
+pip install python-rtmidi
 ```
 
 ## To check Midi Controller Name
