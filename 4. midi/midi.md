@@ -31,7 +31,7 @@ for output_name in mido.get_output_names():
 
 ```
 
-## To retrieve fader value
+## To retrieve fader/button value
 
 ```
 import mido
