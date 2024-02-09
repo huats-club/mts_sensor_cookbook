@@ -14,6 +14,10 @@ pip install mido
 pip install python-rtmidi
 ```
 
+## KORG nanoKONTROL2 Mapping Diagram
+
+![Alt text](../diagram/nanoKontrol2.png)
+
 ## To check Midi Controller Name
 
 ```
