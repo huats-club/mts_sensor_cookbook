@@ -37,7 +37,7 @@ sudo apt install virtualenv python3-virtualenv -y
 2. To create a new virtual environment
 
 ```
-virtualenv -p /usr/bin/python3 <environment_name>
+python3 -m venv --system-site-packages <enviroment_name>
 ```
 **Note** - the virtual environment will be a folder
 
